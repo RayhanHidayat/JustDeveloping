@@ -24,6 +24,7 @@ class DetailActivity : AppCompatActivity() {
         val fruits = intent.getParcelableExtra<FruitEntity>(EXTRA_FRUIT)
 
         supportActionBar?.title = fruits?.namaBuah
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         with(binding) {
             tvBuah.text = fruits?.namaBuah ?: notLoaded()
@@ -36,6 +37,11 @@ class DetailActivity : AppCompatActivity() {
                 .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(5, 0)))
                 .into(imgBuah)
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     private fun notLoaded(): String = "Not Loaded"
