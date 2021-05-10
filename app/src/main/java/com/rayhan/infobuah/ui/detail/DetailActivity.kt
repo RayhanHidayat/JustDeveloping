@@ -6,6 +6,10 @@ import com.rayhan.infobuah.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity() {
 
+    companion object {
+        const val EXTRA_FRUIT = ""
+    }
+
     private lateinit var binding: ActivityDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
