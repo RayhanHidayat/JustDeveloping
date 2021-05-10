@@ -16,7 +16,7 @@
         android:bottom="60dp"
         android:drawable="@drawable/nama_bawah"
         android:gravity="bottom"
-        android:left="90dp"
+        android:left="85dp"
         android:right="80dp" />
 
 </layer-list>
