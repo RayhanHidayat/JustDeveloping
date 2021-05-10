@@ -1,12 +1,15 @@
 package com.rayhan.infobuah.ui.home
 
+import android.graphics.Bitmap
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.MultiTransformation
 import com.bumptech.glide.request.RequestOptions
 import com.rayhan.infobuah.data.FruitEntity
 import com.rayhan.infobuah.databinding.ItemBuahBinding
+import jp.wasabeef.glide.transformations.CropSquareTransformation
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation
 
 class HomeAdapter(private val list: ArrayList<FruitEntity>) :
@@ -16,13 +19,18 @@ class HomeAdapter(private val list: ArrayList<FruitEntity>) :
 
     inner class ViewHolder(private val binding: ItemBuahBinding) :
         RecyclerView.ViewHolder(binding.root) {
+
+        val multi = MultiTransformation<Bitmap>(
+            CropSquareTransformation(), RoundedCornersTransformation(10, 0)
+        )
+
         fun bind(fruitEntity: FruitEntity) {
             with(binding) {
                 tvTitle.text = fruitEntity.namaBuah
                 tvLatin.text = fruitEntity.namaLtnBuah
 
                 Glide.with(itemView.context).load(fruitEntity.imgBuah)
-                    .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(5, 0)))
+                    .apply(RequestOptions.bitmapTransform(multi))
                     .into(imgBuah)
             }
         }
