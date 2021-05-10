@@ -105,6 +105,102 @@ object DataDummy {
             )
         )
 
+        fruits.add(
+            FruitEntity(
+                "Mangga",
+                R.drawable.jacqueline_brandwayn_mng,
+                "Mangifera indica",
+                "Mangga atau mempelam adalah nama sejenis buah, demikian pula nama " +
+                        "pohonnya. Mangga termasuk ke dalam marga Mangifera, yang terdiri dari " +
+                        "35-40 anggota dari suku Anacardiaceae. Nama \"mangga\" berasal dari " +
+                        "bahasa Tamil, mankay, yang berarti man \"pohon mangga\" + kay \"buah\". " +
+                        "Kata ini dibawa ke Eropa oleh orang-orang Portugis dan diserap menjadi " +
+                        "manga (bahasa Portugis), mango (bahasa Spanyol dan Inggris) dan lainnya.",
+                "Tinggi",
+                "Tinggi"
+            )
+        )
+
+        fruits.add(
+            FruitEntity(
+                "Melon",
+                R.drawable.kenny_timmer_mln,
+                "Cucumis melo",
+                "Melon (Cucumis melo L.) merupakan nama buah sekaligus tanaman yang" +
+                        "menghasilkannya yang termasuk dalam suku labu-labuan atau Cucurbitaceae." +
+                        " Buahnya biasanya dimakan segar sebagai buah meja atau diiris-iris " +
+                        "sebagai campuran es buah. Bagian yang dimakan adalah daging buah " +
+                        "(mesokarp). Teksturnya lunak, berwarna putih sampai merah, tergantung " +
+                        "kultivarnya.",
+                "Tinggi",
+                "Menengah"
+            )
+        )
+
+        fruits.add(
+            FruitEntity(
+                "Stroberi",
+                R.drawable.maksim_shutov_strbr,
+                "Fragaria × ananassa",
+                "Stroberi atau tepatnya stroberi kebun (juga dikenal dengan nama arbei," +
+                        "dari bahasa Belanda aardbei) adalah sebuah varietas stroberi yang paling" +
+                        "banyak dikenal di dunia. Seperti spesies lain dalam genus Fragaria " +
+                        "(stroberi), buah ini berada dalam keluarga Rosaceae. Secara umum buah " +
+                        "ini bukanlah buah, melainkan buah palsu, artinya daging buahnya tidak " +
+                        "berasal dari ovari tanaman (achenium) tetapi dari bagian bawah " +
+                        "hypanthium yang berbentuk mangkuk tempat ovari tanaman itu berada.",
+                "Rendah",
+                "Rendah"
+            )
+        )
+
+        fruits.add(
+            FruitEntity(
+                "Apel",
+                R.drawable.matheus_cenali_apl,
+                "Malus domestica",
+                "Apel adalah jenis buah-buahan, atau buah yang dihasilkan dari pohon" +
+                        " buah apel. Buah apel biasanya berwarna merah kulitnya jika masak dan" +
+                        "(siap dimakan), namun bisa juga kulitnya berwarna hijau atau kuning." +
+                        " Kulit buahnya agak lembek dan daging buahnya keras. Buah ini memiliki" +
+                        "beberapa biji di dalamnya.",
+                "Tinggi",
+                "Rendah"
+            )
+        )
+
+        fruits.add(
+            FruitEntity(
+                "Nanas",
+                R.drawable.phoenix_han_pnpl,
+                "Malus domestica",
+                "Nanas, nenas, atau ananas (Ananas comosus (L.) Merr.) adalah sejenis " +
+                        "tumbuhan tropis yang berasal dari Brasil, Bolivia, dan Paraguay" +
+                        "Tumbuhan ini termasuk dalam familia nanas-nanasan (Famili Bromeliaceae)." +
+                        " Perawakan (habitus) tumbuhannya rendah, herba (menahun) dengan 30 atau" +
+                        "lebih daun yang panjang, berujung tajam, tersusun dalam bentuk roset" +
+                        "mengelilingi batang yang tebal. Buahnya dalam bahasa Inggris disebut" +
+                        "sebagai pineapple karena bentuknya yang seperti pohon pinus.",
+                "Tinggi",
+                "Rendah"
+            )
+        )
+
+        fruits.add(
+            FruitEntity(
+                "Alpukat",
+                R.drawable.thought_catalog_avcd,
+                "Persea americana",
+                "Avokad atau alpukat (Persea americana) adalah tumbuhan penghasil buah " +
+                        "meja dengan nama sama. Tumbuhan ini berasal dari Meksiko dan Amerika " +
+                        "Tengah dan kini banyak dibudidayakan di Amerika Selatan dan Amerika " +
+                        "Tengah sebagai tanaman perkebunan monokultur dan sebagai tanaman" +
+                        "pekarangan di daerah-daerah tropika lainnya di dunia.",
+                "Tinggi",
+                "Rendah"
+            )
+        )
+
         return fruits
     }
 }
