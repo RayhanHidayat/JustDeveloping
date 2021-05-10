@@ -2,8 +2,21 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android"
     android:opacity="opaque">
 
-    <item android:drawable="@color/green_200" />
+    <item android:drawable="@drawable/splash_screen_bg" />
 
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:drawable="@drawable/splash_logo"
+        android:gravity="center" />
 
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:bottom="60dp"
+        android:drawable="@drawable/nama_bawah"
+        android:gravity="bottom"
+        android:left="90dp"
+        android:right="80dp" />
 
 </layer-list>

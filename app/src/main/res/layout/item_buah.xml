@@ -29,26 +29,25 @@
 
         <TextView
             android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
+            style="@style/TextContent.Title"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:fontFamily="monospace"
-            android:textColor="@color/black_500"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/img_buah"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Nama Buah" />
 
         <TextView
             android:id="@+id/tv_latin"
-            android:layout_width="wrap_content"
+            style="@style/TextContent.Latin.Small"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:fontFamily="monospace"
-            android:textColor="#606060"
-            android:textSize="12sp"
-            android:textStyle="italic"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/img_buah"
             app:layout_constraintTop_toBottomOf="@id/tv_title"
             tools:text="Nama Latin Buah" />
